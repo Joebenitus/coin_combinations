@@ -10,4 +10,8 @@ describe('Game') do
     test = Game.new('scissors', 'paper')
     expect(test.get_winner).to(eq(1))
   end
+  it('returns winning player for rock and scissors') do
+    test = Game.new('rock', 'scissors')
+    expect(test.get_winner).to(eq(1))
+  end
 end
