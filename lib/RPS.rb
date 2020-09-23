@@ -11,7 +11,7 @@ class Game
     # 0 = tie; 1 = player win; 2 = computer win
     if @player === @computer
       0
-    elsif ((@player == 'scissors') & (@computer == 'paper')) | ((@player == 'rock') & (@computer == 'scissors'))
+    elsif ((@player == 'scissors') & (@computer == 'paper')) | ((@player == 'rock') & (@computer == 'scissors')) | ((@player == 'paper') & (@computer == 'rock'))
       1
     end
   end
