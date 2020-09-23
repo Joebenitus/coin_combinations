@@ -6,5 +6,8 @@ class Game
   end
   
   def get_winner(player, computer)
+    if player === computer
+      0
+    end
   end
 end
